@@ -1,5 +1,13 @@
+import Navbar from "../components/navbar";
+import styles from "../styles/Home.module.css"
+
+
 const Home = () => {
-    return <h1>NO PAGE 404</h1>;
+    return (
+        <>
+            <Navbar />
+        </>
+    );
 };
 
 export default Home
