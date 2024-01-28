@@ -10,12 +10,15 @@
     padding-bottom: 20px;
 }
 
+
+
 .iconDiv img {
     width: 400px;
 }
 
 .cardContent{
     padding-top: 70px;
+    width: 500px;
 }
 
 .cardContent h1{
@@ -30,6 +33,10 @@
 .cardContent ul{
     margin-top: 40px;
     max-width: 600px;
+}
+
+.cardContent ul li{
+    font-size: 18px;
 }
 
 
