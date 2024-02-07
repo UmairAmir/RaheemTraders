@@ -1,0 +1,80 @@
+/* HeroSection.module.css */
+
+.footerSection {
+    position: relative;
+    width: 100%;
+    height: 350px; /* Set your desired height */
+    overflow: hidden;
+  }
+  
+.logoImg {
+    display: flex;
+    align-items: center;
+}
+
+.logoImg img{
+    width: 200px;
+}
+
+.headings h1{
+    font-size: 50px;
+    color: #ff0000;
+    line-height: 0.6;
+    font-weight: 800;
+}
+
+.headings h2{
+    font-size: 30px;
+    font-weight: 800;
+}
+  
+.content {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 80%; /* Adjust as needed */
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+  
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 10%;
+    width: 100%;
+    height: 100%;
+    background-color: #ff0000; /* Red color with opacity */
+    opacity: 0.8;
+    transform: skewX(-30deg); /* Skew the overlay */
+}
+  
+.text {
+    padding: 20px;
+    color: white;
+    z-index: 1;
+    max-width: 800px;
+    display: flex;
+    gap: 100px;
+
+}
+
+.list1 h1, .list2 h1 {
+    font-size: 40px;
+}
+
+.line{
+    border-top: 1px solid white;
+    width: 250px;
+    margin-bottom: 30px;
+}
+
+.list1 ul, .list2 ul {
+    list-style-type: none;
+}
+
+.list1 ul li, .list2 ul li {
+    padding: 10px;
+    font-size: 20px;
+}

@@ -1,7 +1,7 @@
 import styles from '../styles/Navbar.module.css';
 import { Outlet, Link } from "react-router-dom";
 import React, { useState } from 'react';
-import logoShort from "../assets/logoShort.png"
+import logo from "../assets/Logo_White.png"
 
 
 function Navbar() {
@@ -21,7 +21,7 @@ function Navbar() {
 
     return (
         <nav className={styles.navbar}>
-          <div className={styles.logo}><img src={logoShort} alt="logo"/></div>
+          <div className={styles.logo}><img src={logo} alt="logo"/></div>
           <ul className={`${styles.navlinks} ${isMenuOpen ? styles.active : ''}`}>
             <li className={styles.links}>
                 <Link to="/" className={styles.a}>Home</Link>

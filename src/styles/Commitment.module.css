@@ -1,0 +1,74 @@
+/* HexagonsComponent.module.css */
+
+.hexagonsContainer {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .hexagonTopLeft,
+  .hexagonBottomRight {
+    position: absolute;
+    width: 100px; /* Adjust the size as needed */
+    height: 115px; /* Adjust the size as needed */
+  }
+  
+  .hexagonTopLeft p,
+  .hexagonBottomRight p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .hexagonTopLeft {
+    top: 10%;
+    left: 10%;
+  }
+  
+  .hexagonBottomRight {
+    bottom: 10%;
+    right: 10%;
+  }
+  
+  .hexagonTopLeft::before,
+  .hexagonTopLeft::after,
+  .hexagonBottomRight::before,
+  .hexagonBottomRight::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+  }
+  
+  .hexagonTopLeft::before,
+  .hexagonBottomRight::before {
+    top: 0;
+    border-bottom: 57.5px solid #007bff; /* Hexagon color */
+  }
+  
+  .hexagonTopLeft::after,
+  .hexagonBottomRight::after {
+    bottom: 0;
+    border-top: 57.5px solid #007bff; /* Hexagon color */
+  }
+  
+  /* Adjustments for text */
+  .hexagonTopLeft p {
+    color: white;
+  }
+  
+  .hexagonBottomRight p {
+    color: black;
+  }
+  
+  .hexagonBottomRight h2 {
+    color: black;
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  

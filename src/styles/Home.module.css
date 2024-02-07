@@ -1,0 +1,36 @@
+.about {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* width: 90%;
+    margin: 0 auto; */
+}
+
+.content {
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.content h1{
+    font-size: 50px;
+}
+
+.content p {
+    max-width: 600px;
+    font-size: 25px;
+}
+
+.content button {
+    font-weight: 600;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: white;
+    background-color: #ff0000;
+}
+
+.tractorImage img{
+    height: 600px;
+}

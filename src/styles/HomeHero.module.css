@@ -1,0 +1,80 @@
+/* HeroSection.module.css */
+
+.heroSection {
+    position: relative;
+    width: 100%;
+    height: 500px; /* Set your desired height */
+    overflow: hidden;
+    background-color: yellow;
+  }
+  
+  .backgroundImage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../assets/heroImage.png"); /* Add your background image URL here */
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .content {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%; /* Adjust as needed */
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 10%;
+    width: 100%;
+    height: 100%;
+    background-color: #ff0000; /* Red color with opacity */
+    opacity: 0.5;
+    transform: skewX(-10deg); /* Skew the overlay */
+  }
+  
+  .text {
+    padding: 20px;
+    color: white;
+    z-index: 1;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-right: 80px;
+
+  }
+  
+  .text h1 {
+    font-size: 40px;
+  }
+  
+  .text p {
+    font-size: 20px;
+  }
+  
+  button {
+    background-color: black;
+    color: white;
+    border: none;
+    font-weight: bolder;
+    border: 2px solid white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #ddd;
+  }
+  
